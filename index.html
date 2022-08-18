@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<title>Lista de Tareas v 1.0</title>
+</head>
+<body>
+	
+	
+	<div class="Principal Relieve–despues">
+		<div id="contenedorjs"></div>
+		<div class="Wrap">
+			<form class="Formulario" action="">
+				<input type="text" id="tareaInput" placeholder="Add Task">
+				<input type="button" class="Boton" id="btn-agregar" value="Add Task">
+				<input type="button" class="Boton" id="btn-ver-tareas" value="See Tasks">
+				<input type="button" class="Boton" id="btn-quitar" value="Remove Task" onclick="crossOut()">
+				<input type="button" class="Boton" id="btn-borrar-historial" value="Remove History">
+				<input type="button" class="Boton" id="btn-update" value="Update">
+			</form>
+		</div>
+	</div>
+
+	<div class="Tareas">
+		<div class="Wrap">
+			<ul class="Lista " id="lista" onclick="crossOut()">
+				
+			</ul>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+	
+</body>
+</html>
